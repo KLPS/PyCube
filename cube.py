@@ -20,3 +20,32 @@ class rubik_face:
     '''to do
     '''
   
+def initRubiks(corner[], edge[], center[]):
+	'''to do
+	assemble le cube dans sa configuration initiale
+	'''
+	x=0
+	y=0
+	z=0
+  
+	for i in len(corner):
+		for j in len(corner):
+			if (i%len(corner)) == 0 and i != 0:
+				x=x+1
+			if (j%len(corner)) == 0 and j != 0:
+				z=z+1			
+			corner[i].m_position= (x,y,z)
+			#gerer la couleur
+	x=0
+	y=0
+	
+	for i in len(edge):
+		edge[i].m_position = (x,y)
+		y=y+1
+	#gerer la couleur
+	
+	for i in len(center):
+		#to do
+		
+	return corner, edge, center
+	
