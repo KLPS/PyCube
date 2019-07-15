@@ -7,7 +7,7 @@
 
 class rubik_face:
   '''need comment
-  m_position fonctionne en pair (avant/arrière, bas/haut)
+  m_position fonctionne en pair (avant/arrière, gauche/droite, bas/haut)
   m_color est une liste de allant de 1 à 3 couleurs
   '''
   def __init__(self):
